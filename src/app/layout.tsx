@@ -1,3 +1,4 @@
+import { AuthProvider } from "@/contexts/AuthContext";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -16,7 +17,7 @@ export default function RootLayout({
     // TODO: update daisyUI theme here
     <html lang="en" data-theme="cupcake">
       <body className={`antialiased`}>
-        {children}
+        <AuthProvider>{children}</AuthProvider>
         <Analytics />
       </body>
     </html>
