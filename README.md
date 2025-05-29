@@ -36,7 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 
 
 ## Important Notes and Recommendations
-Supabase Auth will not currently function as is. You will have to include you Supabase credentials in the `.env.local` file
+Supabase Auth will not currently function as is. You will have to create and include your Supabase credentials in a `.env` or `.env.local` file
 ```bash
 # TODO: add supabase variables here
 NEXT_PUBLIC_SUPABASE_URL = "https://***.supabase.co"
